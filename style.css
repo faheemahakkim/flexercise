@@ -1,0 +1,217 @@
+*/* {
+    box-sizing: border-box;//*my code//*
+
+}
+nav {
+    display : flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: burlywood;
+    margin-bottom: 50px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+nav .logo {
+    font-size: 40px;
+}
+
+nav .links a {
+
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    transition: all 4s;
+}
+nav .links a:hover {
+    border: 2px solid;
+    border-color: gray;
+    color:chartreuse;
+    background-color: antiquewhite;
+    transition: background-color 4s ;
+}
+footer  .links a:hover {
+    border-color: gray;
+    color:chartreuse;
+    background-color: antiquewhite;
+    transition: background-color 4s ;
+}
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.columns{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+footer .links a {
+    border: 2px solid transparent;
+    color: #000;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.inner-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: seagreen;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+@media screen and (max-width: 780px) {
+   nav{
+       flex-direction: column;
+      
+    }
+    h1 {
+        font-size: 40px;
+
+    }
+    p,a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+     .links{
+        display: none;
+     }
+    
+
+. menubutton {
+    display: block;
+    font-size: 30px;
+    background-color: burlywood;
+    padding:20px;
+    border: none;
+    color: #000;
+}
+}
+.menubutton {
+    display: none;
+}*/
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: burlywood;
+    margin-bottom: 50px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+nav .logo {
+    font-size: 30px;
+}
+
+nav .links a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.links a {
+    transition: all 500ms;
+    padding: 5px;
+    border: 2px solid burlywood;
+    border-radius: 5px;
+}
+
+.links a:hover {
+    background-color: blueviolet;
+    border: 2px solid green;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+footer .links a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer .links a {
+    border-color: seagreen;
+}
+
+.inner-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: seagreen;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+.menu-button {
+    display: none;
+
+}
+
+
+nav nav.open {
+    display: block;
+}
+
+
+@media screen and (max-width: 780px) {
+    nav {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p, a {
+        font-size: 20px;
+    }
+    .columns {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .inner-footer {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+.menu-button {
+    display: block;
+
+}
+nav .links{
+    display: none;
+
+}
+}
